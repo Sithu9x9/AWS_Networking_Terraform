@@ -86,7 +86,7 @@ route {
   }
 
 tags = {
-    Name = "Public Route Table"
+    Name = "Private Route Table"
   }
 }
 
@@ -103,7 +103,7 @@ resource "aws_instance" "Web_Server01" {
   associate_public_ip_address = "true"
   vpc_security_group_ids = [aws_security_group.Lab_Security.id]
   tags = {
-    Name = "Web_01"
+    Name = "Web_Server01"
   }
 }
 
